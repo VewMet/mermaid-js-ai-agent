@@ -69,7 +69,7 @@ def build_latest_openai():
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
     # chatgpt_4o_latest_model: llm.Model = llm.get_model("chatgpt-4o-latest") - experimental
-    chatgpt_4o_latest_model: llm.Model = llm.get_model("gpt-4o-2024-08-06")
+    chatgpt_4o_latest_model: llm.Model = llm.get_model("gpt-4o")
     chatgpt_4o_latest_model.key = OPENAI_API_KEY
     return chatgpt_4o_latest_model
 

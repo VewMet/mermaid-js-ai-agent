@@ -17,6 +17,9 @@ dependencies = [
     "jinja2>=3.1.4",
     "llm-claude-3>=0.4",
     "mako>=1.3.5",
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.23.0",
+    "httpx>=0.25.0"
 ]
 
 [build-system]
@@ -25,3 +28,4 @@ build-backend = "hatchling.build"
 
 [project.scripts]
 main = "mermaid_agent.main:main"
+api = "mermaid_agent.run_api:main"
